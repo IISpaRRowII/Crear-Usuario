@@ -114,6 +114,96 @@ class Ventana1(QMainWindow):
 
         self.horizontal.addLayout(self.ladoIzquierdo)
 
+        self.ladoDerecho = QFormLayout()
+        self.ladoDerecho.setContentsMargins(100, 0, 0, 0)
+
+        self.letrero3 = QLabel()
+        self.letrero3.setText("Recuperar contraseña")
+        self.letrero3.setFont(QFont("Arial", 20))
+        self.letrero3.setStyleSheet("color: black;")
+
+        self.ladoDerecho.addRow(self.letrero3)
+
+        self.letrero4 = QLabel()
+        self.letrero4.setFixedWidth(400)
+        self.letrero4.setText("Por favor ingrese la información para recuperar"
+                              "\nla contraseña. Los campos marcados"
+                              "\ncon asterisco son obligatorios.")
+
+        self.ladoDerecho.addRow(self.letrero4)
+
+        self.labelPregunta1 = QLabel("Pregunta de verificación 1*")
+
+        self.ladoDerecho.addRow(self.labelPregunta1)
+
+        self.pregunta1 = QLineEdit()
+        self.pregunta1.setFixedWidth(320)
+
+        self.ladoDerecho.addRow(self.pregunta1)
+
+        self.labelRespuesta1 = QLabel("Respuesta de verifcación 1*")
+
+        self.ladoDerecho.addRow(self.labelRespuesta1)
+
+        self.respuesta1 = QLineEdit()
+        self.respuesta1.setFixedWidth(320)
+
+        self.ladoDerecho.addRow(self.respuesta1)
+
+        self.labelPregunta2 = QLabel("Pregunta de verificación 2*")
+
+        self.ladoDerecho.addRow(self.labelPregunta2)
+
+        self.pregunta2 = QLineEdit()
+        self.pregunta2.setFixedWidth(320)
+
+        self.ladoDerecho.addRow(self.pregunta2)
+
+        self.labelRespuesta2 = QLabel("Respuesta de verificación 2*")
+
+        self.ladoDerecho.addRow(self.labelRespuesta2)
+
+        self.respuesta2 = QLineEdit()
+        self.respuesta2.setFixedWidth(320)
+
+        self.ladoDerecho.addRow(self.respuesta2)
+
+        self.labelPregunta3 = QLabel("Pregunta de verificación 3*")
+
+        self.ladoDerecho.addRow(self.labelPregunta3)
+
+        self.pregunta3 = QLineEdit()
+        self.pregunta3.setFixedWidth(320)
+
+        self.ladoDerecho.addRow(self.pregunta3)
+
+        self.labelRespuesta3 = QLabel("Respuesta de verificación 3*")
+
+        self.ladoDerecho.addRow(self.labelRespuesta3)
+
+        self.respuesta3 = QLineEdit()
+        self.respuesta3.setFixedWidth(320)
+
+        self.ladoDerecho.addRow(self.respuesta3)
+
+        self.botonBuscar = QPushButton("Buscar")
+        self.botonBuscar.setFixedWidth(90)
+        self.botonBuscar.setStyleSheet("background-color: red;"
+                                       "color: white;"
+                                       "padding: 10px;"
+                                       "margin-top: 40px;")
+
+        self.botonRecuperar = QPushButton("Recuperar")
+        self.botonRecuperar.setFixedWidth(90)
+        self.botonRecuperar.setStyleSheet("background-color: red;"
+                                          "color: white;"
+                                          "padding: 10px;"
+                                          "margin-top: 40px;")
+
+        self.ladoDerecho.addRow(self.botonBuscar, self.botonRecuperar)
+
+        self.horizontal.addLayout(self.ladoDerecho)
+
         # aqui inicia lado izquierdo
         self.fondo.setLayout(self.horizontal)
 
