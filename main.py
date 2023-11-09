@@ -116,7 +116,7 @@ class Ventana1(QMainWindow):
 
         self.botonRegistrar = QPushButton("Registrar")
         self.botonRegistrar.setFixedWidth(90)
-        self.botonRegistrar.setStyleSheet("background-color: red;"
+        self.botonRegistrar.setStyleSheet("background-color: blue;"
                                           "color: white;"
                                           "padding: 10px;"
                                           "margin-top: 40px;")
@@ -124,7 +124,7 @@ class Ventana1(QMainWindow):
 
         self.botonLimpiar = QPushButton("Limpiar")
         self.botonLimpiar.setFixedWidth(90)
-        self.botonLimpiar.setStyleSheet("background-color: red;"
+        self.botonLimpiar.setStyleSheet("background-color: blue;"
                                         "color: white;"
                                         "padding: 10px;"
                                         "margin-top: 40px;")
@@ -208,14 +208,14 @@ class Ventana1(QMainWindow):
 
         self.botonBuscar = QPushButton("Buscar")
         self.botonBuscar.setFixedWidth(90)
-        self.botonBuscar.setStyleSheet("background-color: red;"
+        self.botonBuscar.setStyleSheet("background-color: blue;"
                                        "color: white;"
                                        "padding: 10px;"
                                        "margin-top: 40px;")
 
         self.botonRecuperar = QPushButton("Recuperar")
         self.botonRecuperar.setFixedWidth(90)
-        self.botonRecuperar.setStyleSheet("background-color: red;"
+        self.botonRecuperar.setStyleSheet("background-color: blue;"
                                           "color: white;"
                                           "padding: 10px;"
                                           "margin-top: 40px;")
