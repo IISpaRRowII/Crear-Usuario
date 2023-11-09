@@ -61,39 +61,58 @@ class Ventana1(QMainWindow):
                                     "border-right: none;"
                                     "border-top: none;")
 
+
+
         self.ladoIzquierdo.addRow(self.letrero2)
+
+        self.nombreCompleto1 = QLabel("Nombre Completo")
+        self.ladoIzquierdo.addRow(self.nombreCompleto1)
 
         self.nombreCompleto = QLineEdit()
         self.nombreCompleto.setFixedWidth(250)
 
-        self.ladoIzquierdo.addRow("Nombre Completo", self.nombreCompleto)
+        self.ladoIzquierdo.addRow(self.nombreCompleto)
+
+        self.usuario1 = QLabel("Usuario")
+        self.ladoIzquierdo.addRow(self.usuario1)
 
         self.usuario = QLineEdit()
         self.usuario.setFixedWidth(250)
 
-        self.ladoIzquierdo.addRow("Usuario", self.usuario)
+        self.ladoIzquierdo.addRow(self.usuario)
+
+        self.password1_1 = QLabel("Password")
+        self.ladoIzquierdo.addRow(self.password1_1)
 
         self.password = QLineEdit()
         self.password.setFixedWidth(250)
         self.password.setEchoMode(QLineEdit.Password)
 
-        self.ladoIzquierdo.addRow("Password", self.password)
+        self.ladoIzquierdo.addRow(self.password)
+
+        self.password1_2 = QLabel("Password")
+        self.ladoIzquierdo.addRow(self.password1_2)
 
         self.password2 = QLineEdit()
         self.password2.setFixedWidth(250)
         self.password2.setEchoMode(QLineEdit.Password)
 
-        self.ladoIzquierdo.addRow("Password", self.password2)
+        self.ladoIzquierdo.addRow(self.password2)
 
+        self.documento1 = QLabel("Documento 1")
+        self.ladoIzquierdo.addRow(self.documento1)
         self.documento = QLineEdit()
         self.documento.setFixedWidth(250)
 
-        self.ladoIzquierdo.addRow("Documento", self.documento)
+        self.ladoIzquierdo.addRow(self.documento)
+
+        self.correo1 = QLabel("Correo")
+        self.ladoIzquierdo.addRow(self.correo1)
 
         self.correo = QLineEdit()
         self.correo.setFixedWidth(250)
 
-        self.ladoIzquierdo.addRow("Correo", self.correo)
+        self.ladoIzquierdo.addRow(self.correo)
 
         self.botonRegistrar = QPushButton("Registrar")
         self.botonRegistrar.setFixedWidth(90)
