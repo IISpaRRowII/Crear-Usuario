@@ -45,6 +45,11 @@ class Ventana1(QMainWindow):
         self.letrero1.setFont(QFont("Arial", 20))
         self.letrero1.setStyleSheet("color: black;")
 
+        self.fuente_negrita = QFont()
+        self.fuente_negrita.setBold(True)
+
+        self.letrero1.setFont(self.fuente_negrita)
+
         self.ladoIzquierdo.addRow(self.letrero1)
 
         self.letrero2 = QLabel()
@@ -60,6 +65,11 @@ class Ventana1(QMainWindow):
                                     "border-left: none;"
                                     "border-right: none;"
                                     "border-top: none;")
+
+        self.fuente_negrita = QFont()
+        self.fuente_negrita.setBold(True)
+
+        self.letrero2.setFont(self.fuente_negrita)
 
 
 
